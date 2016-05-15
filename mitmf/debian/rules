@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with python2 
+
+override_dh_install:
+	dh_install -XCOPYING
+	rm -rf debian/mitmf/usr/share/mitmf/libs/bdfactory/
+	rm -f debian/mitmf/usr/share/mitmf/core/dnschef/LICENSE
+
+override_dh_fixperms:
+	dh_fixperms
+	chmod 644 debian/mitmf/usr/share/mitmf/core/sslstrip/README.md

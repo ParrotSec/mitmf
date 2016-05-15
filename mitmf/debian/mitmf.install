@@ -1,0 +1,8 @@
+mitmf.py usr/share/mitmf/
+config/* etc/mitmf/
+core usr/share/mitmf/
+libs usr/share/mitmf/
+lock.ico usr/share/mitmf/
+plugins usr/share/mitmf/
+tools usr/share/mitmf/
+debian/helper-script/* usr/bin/

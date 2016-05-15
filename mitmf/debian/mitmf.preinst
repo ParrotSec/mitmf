@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+if [ $1 = "upgrade" ] && dpkg --compare-versions $2 le 0.9.1-0kali1; then
+	if test -d /usr/share/mitmf/libs/bdfactory && ! test -L /usr/share/mitmf/libs/bdfactory; then
+		rm -rf /usr/share/mitmf/libs/bdfactory
+	fi
+fi
+
+#DEBHELPER#

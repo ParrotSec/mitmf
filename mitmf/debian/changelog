@@ -1,0 +1,72 @@
+mitmf (0.9.8-1parrot0) testing; urgency=medium
+
+  * Import from kali
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Sun, 15 May 2016 15:11:25 +0200
+
+mitmf (0.9.8-0kali1) kali-dev; urgency=medium
+
+  * Import new upstream release
+  * Update debian/copyright
+  * Update the list of available plugins in debian/control
+  * Add the missings dependencies
+  * Add a directory to manage logs for ferret-ng
+  * Add tools/ directory in debian/mitmf.install
+
+ -- Sophie Brun <sophie@freexian.com>  Mon, 07 Sep 2015 10:35:23 +0200
+
+mitmf (0.9.7-0kali1) kali-dev; urgency=medium
+
+  * Import new upstream release
+  * Add depends on python-ipy, python-dnslib, python-watchdog, python-impacket
+  * Update the description in debian/control
+  * Update debian/copyright
+  * Add two dirs in debian/mitmf.dirs for logs
+
+ -- Sophie Brun <sophie@freexian.com>  Wed, 08 Jul 2015 08:47:15 +0200
+
+mitmf (0.9.1-0kali3) kali; urgency=medium
+
+  * Remove empty directory /usr/share/mitmf/libs/bdfactory/ (from upstream
+    tar.gz)
+  * Update description in debian/control
+  * Add a preinst to remove empty directory /usr/share/mitmf/libs/bdfactory/
+    if it already exists
+  * Add a directory and a sym link to manage logs for responder plugin
+
+ -- Sophie Brun <sophie@freexian.com>  Thu, 29 Jan 2015 10:13:50 +0100
+
+mitmf (0.9.1-0kali2) kali; urgency=low
+
+  * Fix path to mitmf libs
+
+ -- Mati Aharoni <muts@kali.org>  Thu, 22 Jan 2015 09:36:12 -0500
+
+mitmf (0.9.1-0kali1) kali; urgency=low
+
+  * Upstream update
+
+ -- Mati Aharoni <muts@kali.org>  Thu, 22 Jan 2015 08:49:45 -0500
+
+mitmf (0.8-0kali1) kali; urgency=medium
+
+  * Import new upstream version 0.8
+  * Update debian/control: add new plugins in description
+  * Add depends to python-configobj
+  * Add helper-script
+
+ -- Sophie Brun <sophie@freexian.com>  Mon, 01 Dec 2014 09:20:37 +0100
+
+mitmf (0.7-0kali2) kali; urgency=medium
+
+  * Add depends to backdoor-factory as the available version is now ok
+  * Add a symlink so that the program find backdoor-factory in the
+    expected "bdfactory" directory 
+
+ -- Sophie Brun <sophie@freexian.com>  Tue, 25 Nov 2014 10:39:57 +0100
+
+mitmf (0.7-0kali1) kali; urgency=low
+
+  * Initial packaging for kali
+
+ -- Sophie Brun <sophie@freexian.com>  Tue, 14 Oct 2014 08:15:26 +0200
