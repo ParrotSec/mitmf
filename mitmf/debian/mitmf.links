@@ -1,3 +1,0 @@
-etc/mitmf usr/share/mitmf/config
-usr/share/backdoor-factory usr/share/mitmf/libs/bdfactory
-var/log/mitmf usr/share/mitmf/logs
